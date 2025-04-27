@@ -6,7 +6,7 @@ authors = [
     {name = "jingfelix", email = "jingfelix@outlook.com"},
 ]
 dependencies = [
-    "dify-plugin~=0.0.1b72",
+    "dify_plugin>=0.2.1,<0.3.0",
 ]
 requires-python = ">=3.12"
 readme = "README.md"
