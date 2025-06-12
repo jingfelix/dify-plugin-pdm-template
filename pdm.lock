@@ -5,7 +5,7 @@
 groups = ["default"]
 strategy = ["inherit_metadata"]
 lock_version = "4.5.0"
-content_hash = "sha256:61573a6d34c41f36537933968448871d4c8d467c7d62994d40590ceec02fc1cb"
+content_hash = "sha256:079cf22a483edee0b66faf8e3d08e69e3e95b6d991b1c2573ea8e9f99f001898"
 
 [[metadata.targets]]
 requires_python = ">=3.12"
@@ -165,7 +165,7 @@ files = [
 
 [[package]]
 name = "dify-plugin"
-version = "0.2.1"
+version = "0.3.2"
 requires_python = ">=3.11"
 summary = "Dify Plugin SDK"
 groups = ["default"]
@@ -174,10 +174,10 @@ dependencies = [
     "Werkzeug~=3.0.3",
     "dpkt~=1.9.8",
     "gevent~=24.11.1",
-    "httpx~=0.27.0",
+    "httpx~=0.28.1",
+    "packaging>=25.0",
     "pydantic-settings<3.0.0,>=2.5.0",
     "pydantic>=2.8.2",
-    "pydub~=0.25.1",
     "pyyaml~=6.0.1",
     "requests~=2.32.3",
     "socksio==1.0.0",
@@ -185,8 +185,8 @@ dependencies = [
     "yarl<2.0,>=1.9.4",
 ]
 files = [
-    {file = "dify_plugin-0.2.1-py3-none-any.whl", hash = "sha256:84e6afa2ecee28c0816d8cf54115250c0e4d84aeb1f67296ac39e303b1f723e8"},
-    {file = "dify_plugin-0.2.1.tar.gz", hash = "sha256:ce415fe516285dba8ce6ff8c964d30efb8e11f64d23c8d1bb22bf91281ed0088"},
+    {file = "dify_plugin-0.3.2-py3-none-any.whl", hash = "sha256:554736320a03bfb083a86c791864a6c855cf01bde0f61fb16540f4ea4275036c"},
+    {file = "dify_plugin-0.3.2.tar.gz", hash = "sha256:6121afae3c6c2459231b51f522de3301df8797b9ccc2d90aa110c06e043268c5"},
 ]
 
 [[package]]
@@ -315,7 +315,7 @@ files = [
 
 [[package]]
 name = "httpx"
-version = "0.27.2"
+version = "0.28.1"
 requires_python = ">=3.8"
 summary = "The next generation HTTP client."
 groups = ["default"]
@@ -324,11 +324,10 @@ dependencies = [
     "certifi",
     "httpcore==1.*",
     "idna",
-    "sniffio",
 ]
 files = [
-    {file = "httpx-0.27.2-py3-none-any.whl", hash = "sha256:7bb2708e112d8fdd7829cd4243970f0c223274051cb35ee80c03301ee29a3df0"},
-    {file = "httpx-0.27.2.tar.gz", hash = "sha256:f7c2be1d2f3c3c3160d441802406b206c2b76f5947b11115e6df10c6c65e66c2"},
+    {file = "httpx-0.28.1-py3-none-any.whl", hash = "sha256:d909fcccc110f8c7faf814ca82a9a4d816bc5a6dbfea25d6591d6985b8ba59ad"},
+    {file = "httpx-0.28.1.tar.gz", hash = "sha256:75e98c5f16b0f35b567856f597f06ff2270a374470a5c2392242528e3e3e42fc"},
 ]
 
 [[package]]
@@ -470,6 +469,17 @@ files = [
     {file = "multidict-6.4.3-cp313-cp313t-win_amd64.whl", hash = "sha256:7146a8742ea71b5d7d955bffcef58a9e6e04efba704b52a460134fefd10a8208"},
     {file = "multidict-6.4.3-py3-none-any.whl", hash = "sha256:59fe01ee8e2a1e8ceb3f6dbb216b09c8d9f4ef1c22c4fc825d045a147fa2ebc9"},
     {file = "multidict-6.4.3.tar.gz", hash = "sha256:3ada0b058c9f213c5f95ba301f922d402ac234f1111a7d8fd70f1b99f3c281ec"},
+]
+
+[[package]]
+name = "packaging"
+version = "25.0"
+requires_python = ">=3.8"
+summary = "Core utilities for Python packages"
+groups = ["default"]
+files = [
+    {file = "packaging-25.0-py3-none-any.whl", hash = "sha256:29572ef2b1f17581046b3a2227d5c611fb25ec70ca1ba8554b24b0e69331a484"},
+    {file = "packaging-25.0.tar.gz", hash = "sha256:d443872c98d677bf60f6a1f2f8c1cb748e8fe762d2bf9d3148b5599295b0fc4f"},
 ]
 
 [[package]]
@@ -618,16 +628,6 @@ dependencies = [
 files = [
     {file = "pydantic_settings-2.9.1-py3-none-any.whl", hash = "sha256:59b4f431b1defb26fe620c71a7d3968a710d719f5f4cdbbdb7926edeb770f6ef"},
     {file = "pydantic_settings-2.9.1.tar.gz", hash = "sha256:c509bf79d27563add44e8446233359004ed85066cd096d8b510f715e6ef5d268"},
-]
-
-[[package]]
-name = "pydub"
-version = "0.25.1"
-summary = "Manipulate audio with an simple and easy high level interface"
-groups = ["default"]
-files = [
-    {file = "pydub-0.25.1-py2.py3-none-any.whl", hash = "sha256:65617e33033874b59d87db603aa1ed450633288aefead953b30bded59cb599a6"},
-    {file = "pydub-0.25.1.tar.gz", hash = "sha256:980a33ce9949cab2a569606b65674d748ecbca4f0796887fd6f46173a7b0d30f"},
 ]
 
 [[package]]
